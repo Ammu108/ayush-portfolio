@@ -24,7 +24,7 @@ const AboutMe = () => {
             <div className="absolute -right-5 -top-5 w-18 h-18 border border-orange-500/60 bg-orange-500/10" />
             <div className="relative border border-neutral-700 bg-[#0f0f0f] p-3">
               <Image
-                src="/profile-img.png"
+                src="/profile-img.jpeg"
                 alt="Profile portrait"
                 width={360}
                 height={420}
