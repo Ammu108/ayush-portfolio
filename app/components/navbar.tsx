@@ -64,40 +64,40 @@ const Navbar = () => {
 					}`}
 				/>
 			</button>
-			; isOpen && (
-			<div className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md md:hidden">
-				<div className="flex flex-col gap-4 px-4 py-6 border-t border-neutral-800">
-					<Link
-						href="#work"
-						className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
-						onClick={() => setIsOpen(false)}
-					>
-						Work
-					</Link>
-					<Link
-						href="#about"
-						className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
-						onClick={() => setIsOpen(false)}
-					>
-						About
-					</Link>
-					<Link
-						href="/projects"
-						className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
-						onClick={() => setIsOpen(false)}
-					>
-						Projects
-					</Link>
-					<Link
-						href="#contact"
-						className="text-xs tracking-widest bg-white text-black px-5 py-2 hover:bg-neutral-200 transition-colors uppercase font-mono text-center"
-						onClick={() => setIsOpen(false)}
-					>
-						Hire Me
-					</Link>
+			{isOpen && (
+				<div className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md md:hidden">
+					<div className="flex flex-col gap-4 px-4 py-6 border-t border-neutral-800">
+						<Link
+							href="#work"
+							className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
+							onClick={() => setIsOpen(false)}
+						>
+							Work
+						</Link>
+						<Link
+							href="#about"
+							className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
+							onClick={() => setIsOpen(false)}
+						>
+							About
+						</Link>
+						<Link
+							href="/projects"
+							className="text-xs tracking-widest text-neutral-400 hover:text-white transition-colors uppercase font-mono"
+							onClick={() => setIsOpen(false)}
+						>
+							Projects
+						</Link>
+						<Link
+							href="#contact"
+							className="text-xs tracking-widest bg-white text-black px-5 py-2 hover:bg-neutral-200 transition-colors uppercase font-mono text-center"
+							onClick={() => setIsOpen(false)}
+						>
+							Hire Me
+						</Link>
+					</div>
 				</div>
-			</div>
-			);
+			)}
 		</nav>
 	);
 };
